@@ -52,6 +52,6 @@ do
     fat=$(($fat*$i))
 done
 
-echo "O fatorial de $num é: $fat"
+echo "O fatorial de $cont é: $fat"
 
 

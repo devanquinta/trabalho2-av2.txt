@@ -38,3 +38,20 @@ else
     echo -e "Arquivo não existe"
 fi
 
+2-resposta:
+
+#!/bin/bash
+
+echo "Digite o número que queria saber o fatorial: "
+read cont
+
+fat=1
+
+for ((i=0; i < $cont ; i++))
+do
+    fat=$(($fat*$i))
+done
+
+echo "O fatorial de $num é: $fat"
+
+

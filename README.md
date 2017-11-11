@@ -47,7 +47,7 @@ read cont
 
 fat=1
 
-for ((i=0; i < $cont ; i++))
+for ((i=1; i <= $cont ; i++))
 do
     fat=$(($fat*$i))
 done

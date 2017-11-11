@@ -31,7 +31,7 @@ cat > verifcarq.sh
 
 #!/bin/bash
 arq = $1
-if [ -f $aqr ]
+if [ -f $arq ]
 then
    echo -e "Arquivo existe!
 else

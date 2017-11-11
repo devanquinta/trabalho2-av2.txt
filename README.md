@@ -55,3 +55,21 @@ done
 echo "O fatorial de $cont é: $fat"
 
 
+3-Resposta:
+
+#!/bin/bash
+
+for vazio in $(ls)
+do
+
+   if [ -f $vazio  ]
+   then
+       echo -e "Arquivo não está vazio: $vazio"
+
+    else
+        echo -e "Arquivo  vazio: $vazio"
+
+fi
+done
+
+

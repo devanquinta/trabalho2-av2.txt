@@ -26,7 +26,7 @@ da pasta atual com tamanho = 0kb (vazio).
 
 Respostas das perguntas:
 
-1-Resposta
+1-Resposta:
 cat > verifcarq.sh
 
 #!/bin/bash

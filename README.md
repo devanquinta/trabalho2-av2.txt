@@ -36,10 +36,5 @@ then
     echo -e "Arquivo existe!"
 else
     echo -e "Arquivo não existe"
-firq = $1
-if [ -f $arq ]
-then
-    echo -e "Arquivo existe!"
-else
-    echo -e "Arquivo não existe"
 fi
+

@@ -62,14 +62,10 @@ echo "O fatorial de $cont é: $fat"
 for vazio in $(ls)
 do
 
-   if [ -f $vazio  ]
+   if ! [ -f $vazio  ]
    then
-       echo -e "Arquivo não está vazio: $vazio"
-
-    else
-        echo -e "Arquivo  vazio: $vazio"
-
-fi
+       echo -e "Arquivo está vazio: $vazio"
+   fi
 done
 
 

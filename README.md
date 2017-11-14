@@ -56,6 +56,7 @@ echo "O fatorial de $cont é: $fat"
 #!/bin/bash
 
 for vazio in $(ls)
+
 do
 
    if ! [ -f $vazio  ]
@@ -99,6 +100,7 @@ done
 for pesqfile in $(ls)
 
 do
+
   case $pesqfile in
   
                  *.txt)

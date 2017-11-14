@@ -95,53 +95,57 @@ done
 
 4 - resposta
 
+ 
+
 #!/bin/bash
 
-for pesqfile in $(ls)
+total=0
+
+txt=0
+
+c=0
+
+py=0
+
+arq=$1
+
+for arq in $(ls)
 
 do
 
-  case $pesqfile in
-                 
-                 *)
-                 
-                 echo $pesqfile
-                  
-                 total=$(cat "$pesqfile" | wc -l )
-                  
-                 echo -e "total de Arquivos : $total";;
-  
-                 *.txt)
-                 
-                 echo $pesqfile
-                 
-                 totaltxt=$(cat "$pesqfile" | wc -l *.txt)
-                 
-                 echo -e "total de Arquivos txt: $totaltxt";
-                 
-                 *.py)
-                 
-                 echo $pesqfile
-                 
-                 totalpy=$(cat "$pesqfile" | wc -l *.py)
-                 
-                 echo -e "total de Arquivos py: $totalpy";;
-                 
-                 *.c)
-                 
-                 echo $pesqfile
-                 
-                 totalc=$(cat "$pesqfile" | wc -l *.c)
-                 
-                 echo -e "total de Arquivos c: $totalc";;
-                                
-                  
+case $arq in
+
+          *.txt)
+          
+            echo $arq
+            
+            txt=$(( $txt + 1 ));;
+
+          *c)
+          
+            echo $arq
+            
+            c=$(( $c + 1));;
+            
+          *py)
+          
+            echo $arq
+            
+            py=$(( py + 1));;
+            
+           *)
+           
+            echo $arq
+            
+            total=$((total + 1 ));;
     esac
     
- done
-                  
-                 
-                 
-                 
+done
 
+echo "total de arquivos: $total"
 
+echo "total de arquivos txt: $txt"
+
+echo "total de arquivos c: $c"
+
+echo "total de arquivos py: $py"

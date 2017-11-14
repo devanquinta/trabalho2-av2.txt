@@ -47,6 +47,16 @@ do
 done
 
 #OBS: no meu Ubumtu não funcionou com -s,mesmo com "if -f" depois "if -s", mas roda correto dessa forma
+<# resposta certa seria: 
+#!/bin/bash
+for vazio in $(ls)
+do
+   if ! [ -s $vazio  ]
+   then
+       echo -e "Arquivo está vazio: $vazio"
+   fi
+done
+#>
 
 4-resposta
 

@@ -1,5 +1,7 @@
 # trabalho2-av2.txt
 
+OBS: Ler na edição fica mais facil de compreender
+
 Respostas das perguntas:
 
 1-Resposta:

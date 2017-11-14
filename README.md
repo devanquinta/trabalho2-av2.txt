@@ -102,14 +102,26 @@ for pesqfile in $(ls)
 do
 
   case $pesqfile in
+                 
+                 *)
+                 
+                 echo $pesqfile
+                  
+                 total=$(cat "$pesqfile" | wc -l )
+                  
+                 echo -e "total de Arquivos : $total";;
   
                  *.txt)
                  
+                 echo $pesqfile
+                 
                  totaltxt=$(cat "$pesqfile" | wc -l *.txt)
                  
-                 echo -e "total de Arquivos txt: $totaltxt";;
+                 echo -e "total de Arquivos txt: $totaltxt";
                  
                  *.py)
+                 
+                 echo $pesqfile
                  
                  totalpy=$(cat "$pesqfile" | wc -l *.py)
                  
@@ -117,14 +129,12 @@ do
                  
                  *.c)
                  
+                 echo $pesqfile
+                 
                  totalc=$(cat "$pesqfile" | wc -l *.c)
                  
                  echo -e "total de Arquivos c: $totalc";;
-                 
-                 *)
-                  total=$(cat "$pesqfile" | wc -l )
-                  
-                  echo -e "total de Arquivos : $total";;
+                                
                   
     esac
     

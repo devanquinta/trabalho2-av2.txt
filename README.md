@@ -4,7 +4,7 @@
 
 Respostas das perguntas:
 
-1- Resposta:
+1 - Resposta:
 
 cat > verifcarq.sh
 
@@ -26,7 +26,9 @@ fi
 
 
 
-2- resposta:
+
+
+2 - resposta:
 
 #!/bin/bash
 
@@ -48,7 +50,8 @@ echo "O fatorial de $cont é: $fat"
 
 
 
-3-Resposta:
+
+3 - Resposta:
 
 #!/bin/bash
 
@@ -88,7 +91,8 @@ done
 
 
 
-4-resposta
+
+4 - resposta
 
 #!/bin/bash
 

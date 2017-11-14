@@ -1,6 +1,6 @@
 # trabalho2-av2.txt
 
-OBS: Ler na edição fica mais facil de compreender
+#OBS: Ler na edição fica mais facil de compreender
 
 Respostas das perguntas:
 
@@ -45,6 +45,8 @@ do
        echo -e "Arquivo está vazio: $vazio"
    fi
 done
+
+#OBS: no meu Ubumtu não funconou com -s,mesmo com "if -f" depois "if -s", mas roda correto dessa forma
 
 4-resposta
 
